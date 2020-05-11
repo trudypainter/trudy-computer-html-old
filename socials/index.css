@@ -1,0 +1,18 @@
+h1, h3, a {
+  text-align: center;
+  color: black;
+  font: 20px Arial, sans-serif;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.square {
+  width: 300px;
+  height: 325px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+hr{
+    border: 1px solid black;
+}
