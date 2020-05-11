@@ -92,13 +92,14 @@ ul {
     .left-col-block {
         width    : 100%;
         position : relative;
+        border-right-style: none;
         }
 
     .right-col-block {
         width      : 100%;
         position   : relative;
         box-shadow : none;
-        border-bottom-style: solid;
+        border-bottom-style: none;
         }
     }
 
