@@ -92,6 +92,7 @@ ul {
         width    : 100%;
         position : relative;
         border-right-style: none;
+        height: auto;
         }
 
     .right-col-block {
