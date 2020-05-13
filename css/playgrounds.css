@@ -42,7 +42,7 @@ a {
     text-decoration: none;
     border-radius: 8px;
     font-size: 18px;
-    border-radius: 100%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     text-align: center;
