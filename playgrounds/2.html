@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SCROLL BABY!!</title>
+        <link href="favicon.png" rel=icon>
+        <link href="css/2.css" rel="stylesheet">
+    </head>
+        
+    <body>
+        <div>🍄</div>
+    </body>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).on("scroll", function(){
+            var pixels = $(document).scrollTop()
+
+            $("div").css("font-size", pixels)
+
+        })
+    </script>
+</html>

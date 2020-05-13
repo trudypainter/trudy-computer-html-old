@@ -1,0 +1,9 @@
+body{
+    background-color: cornflowerblue;
+    height: 4000px;
+}
+div {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
