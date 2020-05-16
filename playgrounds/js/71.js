@@ -21,7 +21,6 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         });
 
     });
-
     $('.projects__8').mouseenter(function(){
         $('.cursor--other').attr('src','images/7/cursor.png');
         $('.background-video').attr('src','images/7/2.mp4');
