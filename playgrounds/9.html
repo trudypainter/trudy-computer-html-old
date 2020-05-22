@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>brought to you by php</title>
+        <link href="/favicon.png" rel=icon>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link href="css/9.css" rel="stylesheet">
+    </head>
+        
+    <body>
+        <?php
+		date_default_timezone_set('America/New_York');
+		$today = date("l");
+	?>
+
+	<!--
+	if it is Sunday...
+	this PHP code asks if the variable "today" is equal to "Sunday"
+	and if so, execute the HTML code below it
+	(this is the start of an "if statement")
+	-->
+	<?php if($today == "Thursday") : ?>
+
+		<div class="sky"></div>
+
+		<div class="sign sunday">
+			<p>
+				Happy Sunday!
+			</p><br>
+			<p>
+				Three links today:<br><br>
+				<a href="http://iwillansweryouremails.com">Link one</a><br><br>
+				<a href="http://www.shapesqueeze.com">Link two</a><br><br>
+			  <a href="http://dictionary.pink">Link three</a>
+			</p>
+		</div>
+
+	<!--
+	if it is not Sunday...
+	execute the HTML code below
+	(this is the "else" of the "if statement")
+	-->
+	<?php else : ?>
+
+		<div class="shutter"></div>
+
+	  <div class="sign">
+	    <p>
+	      Sorry,<br /> we're closed<br /><br />
+	    </p>
+	    <p>
+	      Mon:&nbsp; closed <br />
+	      Tue:&nbsp; closed <br />
+	      Wed:&nbsp; closed <br />
+	      Thu:&nbsp; closed <br />
+	      Fri:&nbsp; closed <br />
+	      Sat:&nbsp; closed <br />
+	      Sun:&nbsp; open <br />
+	    </p>
+	  </div>
+
+	<!-- (this is the end of the "if statement") -->
+	<?php endif ?>
+
+</body>
+
+</html>
