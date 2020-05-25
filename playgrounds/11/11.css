@@ -1,0 +1,16 @@
+h1 {
+    margin: 60px;
+    width: 600px;
+    z-index: 1;
+    color: darkblue;
+    text-align: left;
+    line-height: 1;
+    word-break: break-word;
+    font-size: 1.2em;
+    padding: 2em 2em;
+    border: 1px solid darkblue;
+    cursor: pointer;
+  }
+  h1:hover, h1:focus {
+    border-style: dotted; 
+  }
