@@ -3,7 +3,8 @@
   src: url("junicode-regular-webfont.woff");
 }
 h1 {
-    margin: 60px;
+    margin-left: 60px;
+    margin-top: 60px;
     width: 600px;
     z-index: 1;
     color: darkblue;
@@ -18,4 +19,10 @@ h1 {
   }
   h1:hover, h1:focus {
     border-style: dotted; 
+  }
+  p{
+    font-family: junicode;
+    color: darkblue;
+    margin-left: 60px;
+    margin-top: 10px;
   }
