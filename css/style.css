@@ -6,12 +6,13 @@ body, h1, h2, h3, h4, h5, h6, small, p {
     font-weight : 300;
     margin-top: 0px;
     margin-bottom: 0px;
+    letter-spacing: 0.06px;
     }
 
 h1,h2 {
     font-weight : bold;
     margin-bottom: 20px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.2px;
     }
 
 small {
