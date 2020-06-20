@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>📸</title>
-        <link href="/favicon.png" rel=icon>
-        <link href="css/3.css" rel="stylesheet">
-    </head>
-        
-    <body>
-        <header>
+
+<head>
+    <meta charset="utf-8">
+    <title>📸</title>
+    <link href="/favicon.png" rel=icon>
+    <link href="css/3.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
         <p>click for random flickr pic!</p>
-        </header>
-    </body>
+    </header>
+    <script src="/js/navbutton.js"></script>
 
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <!--image generator-->
-    <script type="text/javascript">
-        var keywordlist = ["kevin abstract", "young thug", "clairo", "playboi carti", 
+</body>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--image generator-->
+<script type="text/javascript">
+    var keywordlist = ["kevin abstract", "young thug", "clairo", "playboi carti",
         "mf doom", "vaporwave", "aphex twin", "steve lacy", "bauhaus", "toro y moi",
-        "vampire weekend"]
-        var i = 0;
+        "vampire weekend"
+    ]
+    var i = 0;
 
-        function placeimage(x, y) {
-            const img = document.createElement("img")
+    function placeimage(x, y) {
+        const img = document.createElement("img")
             //generate random keyword
-            var index = Math.floor(Math.random() * keywordlist.length);
+        var index = Math.floor(Math.random() * keywordlist.length);
 
-            $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
-            {
+        $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
                 //tags: "vampire weekend",
                 tags: keywordlist[index],
                 tagmode: "any",
@@ -37,25 +40,24 @@
             function(data) {
                 var rnd = Math.floor(Math.random() * data.items.length);
                 var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
-                img.setAttribute("src", image_src)  
+                img.setAttribute("src", image_src)
             });
-            img.style.left = x-100 + "px"
-            img.style.top = y-100 + "px"
-            
-            //adding the image and label
-            setTimeout(document.body.appendChild(img), 500)
-            $("p").html("flickr tag: " + keywordlist[index]);
-        } 
-        document.addEventListener("click", function (event) {
-            event.preventDefault()
-            placeimage(event.pageX, event.pageY)
-        })
-        document.addEventListener("touchend", function (event) {
-            event.preventDefault()
-            placeimage(event.pageX, event.pageY)
-        })
-       
-    </script>
-   
+        img.style.left = x - 100 + "px"
+        img.style.top = y - 100 + "px"
+
+        //adding the image and label
+        setTimeout(document.body.appendChild(img), 500)
+        $("p").html("flickr tag: " + keywordlist[index]);
+    }
+    document.addEventListener("click", function(event) {
+        event.preventDefault()
+        placeimage(event.pageX, event.pageY)
+    })
+    document.addEventListener("touchend", function(event) {
+        event.preventDefault()
+        placeimage(event.pageX, event.pageY)
+    })
+</script>
+
 
 </html>
