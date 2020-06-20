@@ -12,8 +12,10 @@
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var blocks = JSON.parse(this.responseText).contents
-                blocks.forEach(x => { texts.unshift(x.content);
-                    dates.unshift(formatDate(new Date(x.created_at))) })
+                blocks.forEach(x => {
+                    texts.unshift(x.content);
+                    dates.unshift(formatDate(new Date(x.created_at)))
+                })
                 if (start < end) {
                     start++
                     loadBlocks(start, fn)

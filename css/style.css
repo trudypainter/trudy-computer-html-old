@@ -61,11 +61,6 @@ a:active {
     outline: none
 }
 
-a:hover {
-    text-decoration: none;
-    color: rgb(15, 179, 88);
-}
-
 p {
     margin-bottom: 0px;
 }
