@@ -1,0 +1,216 @@
+/* title and email */
+
+.title {
+    position: absolute;
+    left: 14px;
+    top: -2px;
+    font-family: GlyphWorld;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+
+/* Rectangle 1 */
+
+.rectangle_1 {
+    position: absolute;
+    width: 11px;
+    height: 319px;
+    left: 142px;
+    top: 99px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    transform: rotate(180deg);
+}
+
+
+/* Rectangle 2 */
+
+.rectangle_2 {
+    left: 306px;
+    top: -65px;
+    position: absolute;
+    width: 10.77px;
+    height: 317.1px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    transform: rotate(90deg);
+}
+
+
+/* Inside Graph */
+
+.inside_graph {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Goodreads */
+
+.goodreads {
+    position: absolute;
+    width: 94px;
+    height: 20px;
+    left: 347px;
+    top: 313px;
+}
+
+
+/* Resume */
+
+.resume {
+    position: absolute;
+    width: 68px;
+    height: 15px;
+    left: 216px;
+    top: 123px;
+}
+
+
+/* Github */
+
+.github {
+    position: absolute;
+    width: 64px;
+    height: 15px;
+    left: 161px;
+    top: 185px;
+}
+
+
+/* Are.na */
+
+.arena {
+    position: absolute;
+    width: 67px;
+    height: 15px;
+    left: 170px;
+    top: 276px;
+}
+
+
+/* Spotify */
+
+.spotify {
+    position: absolute;
+    width: 68px;
+    height: 15px;
+    left: 223px;
+    top: 366px;
+}
+
+
+/* Outfits */
+
+.outfits {
+    position: absolute;
+    width: 68px;
+    height: 15px;
+    left: 416px;
+    top: 368px;
+}
+
+
+/* VSCO */
+
+.vsco {
+    position: absolute;
+    width: 68px;
+    height: 15px;
+    left: 373px;
+    top: 393px;
+}
+
+
+/* Professional */
+
+.professional {
+    position: absolute;
+    width: 86px;
+    height: 22px;
+    left: 88px;
+    top: 115px;
+    font-family: GlyphWorld;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #000000;
+    transform: rotate(-90deg);
+}
+
+
+/* Personal */
+
+.personal {
+    position: absolute;
+    width: 63px;
+    height: 22px;
+    left: 100px;
+    top: 361px;
+    font-family: GlyphWorld;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    transform: rotate(-90deg);
+}
+
+
+/* Essential */
+
+.essential {
+    position: absolute;
+    width: 67px;
+    height: 17px;
+    left: 153px;
+    top: 56px;
+    font-family: GlyphWorld;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+
+/* Peripheral */
+
+.peripheral {
+    position: absolute;
+    width: 76px;
+    height: 17px;
+    left: 400px;
+    top: 55px;
+    font-family: GlyphWorld;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #000000;
+}
