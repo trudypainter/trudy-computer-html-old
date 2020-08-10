@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Add a gray background color with some padding */
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: #000000;
+    font-size: 17px;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: #000000;
+    font-size: 17px;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #000f97;
+    font-size: 17px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+/* Header/Blog Title */
+
+.header {
+    padding: 30px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 60px;
+    width: 39.5%;
+}
+
+.title {
+    padding-left: 35px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    list-style: none;
+}
+
+
+/* iframe graph */
+
+.graph {
+    width: 95%;
+    overflow: hidden;
+    align-self: center;
+    border: none;
+}
+
+iframe {
+    border: none;
+    width: 900px;
+    height: 420px;
+    margin-left: -120px;
+    margin-top: -50px;
+    overflow: hidden;
+}
+
+.over {
+    background-color: #ddd;
+    height: 600px;
+    min-height: 400px;
+    max-width: 450px;
+    overflow: auto;
+    line-height: 1.2;
+}
+
+.over a {
+    color: #000000;
+}
+
+.over a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.over h2 {
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #F7F7F7;
+    padding-left: 10px;
+}
+
+li {
+    border: 1px solid #E6E6E6;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #fff;
+    padding-top: -300px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    position: relative;
+}
+
+.row {
+    padding-left: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.leftcolumn {
+    float: left;
+    width: 50%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    min-width: 740px;
+}
+
+
+/* Middle column */
+
+.middlecolumn {
+    margin: auto;
+    float: left;
+    width: 40%;
+    padding: 60px;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* Add a card effect for articles */
+
+.card {
+    border: black dotted;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+
+/* Footer */
+
+.footer {
+    padding: 30px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other*/
+
+@media(max-width: 1000px) {
+    .leftcolumn,
+    .middlecolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-device-width: 566px) {
+    .leftcolumn,
+    .middlecolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+    .homeColumn {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .middlecolumn {
+        padding-left: 200px;
+        padding-top: 60px;
+    }
+}
+
+
+/* img */
+
+img {
+    padding: 30px;
+    width: 100%;
+    text-decoration: none;
+    align-content: center;
+}

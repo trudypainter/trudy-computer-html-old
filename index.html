@@ -2,32 +2,48 @@
 <html>
 
 <head>
+
+
     <title>Trudy Painter</title>
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="home.css" media="screen">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <p class="personal">Personal</p>
-    <p class="professional">Professional</p>
-    <p class="essential">Essential</p>
-    <p class="peripheral">Peripheral</p>
 
-    <p class="title">Trudy Painter
-        <br> MIT Computer Science<br>
-        <a style="color: black; text-decoration: none" href="mailto:tpainter@mit.edu">tpainter@mit.edu</a></p>
+    <h2 class="title">Trudy Painter</h2>
 
-    <span class="rectangle_1"></span>
-    <span class="rectangle_2"></span>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="homeColumn">
+                <div class="card">
+                    <p>hey 👋 i'm Trudy. i'm a 2nd year undergrad computer science and (94% sure) comparative media studies student at MIT.</p>
 
-    <a target="blank" href="https://docs.google.com/spreadsheets/d/1pBokIjBV7lxDYNxqqxfLrNb7h3h4GuhWSbrrTGd9Fho/edit?usp=sharing" class="inside_graph resume">Resume</a>
-    <a target="blank" href="https://www.are.na/trudy-painter" class="inside_graph arena">Are.na</a>
-    <a target="blank" href="https://www.goodreads.com/review/list/117820794?shelf=read" class="inside_graph goodreads">Goodreads</a>
-    <a target="blank" href="https://www.instagram.com/turdjournal/" class="inside_graph outfits">Outfits</a>
-    <a target="blank" href="https://vsco.co/bionicpinkytoe/gallery" class="inside_graph vsco">VSCO</a>
-    <a target="blank" href="https://open.spotify.com/user/trudypaintet?si=ZlW6diDKSl61x9oKhit5BA" class="inside_graph spotify">Spotify</a>
-    <a target="blank" href="https://github.com/trudypainter" class="inside_graph github">Github</a>
+                    <p>i'm interested in creative coding, data analysis, building systems, and how people express themselves.</p>
 
+                    <p>you can contact me at <a href="mailto:tpainter@mit.edu" target="_top" title="tianadueck@gmail.com">tpainter@mit.edu</a>.</p>
+
+                    <!-- <p>We count the hours in a day. We point to their increase. Earlier, we saw only half the day, now we have noticed the movement within the whole of the day. But when the next day comes, we begin counting the hours anew.</p> -->
+
+                    <p>or find me one of these places...</p>
+
+                    <div class="graph">
+                        <iframe src="graph.html" scrolling="no" margin-left="-100px"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="middlecolumn" style="align-content: center;">
+            <img id="me" src="me.png" alt="" style="width: 400px; height: 400px;" />
+        </div>
+    </div>
 
 </body>
 

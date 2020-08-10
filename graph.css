@@ -1,5 +1,9 @@
 /* title and email */
 
+body {
+    background-color: white;
+}
+
 .title {
     position: absolute;
     left: 14px;
