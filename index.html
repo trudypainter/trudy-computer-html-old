@@ -15,7 +15,17 @@
 
 </head>
 
-<body>
+<body onload="setTimeout(fixtwitterembed(), 1000)">
+
+    <script>
+        function fixtwitterembed() {
+            console.log("arna func");
+
+            $("#twitter-widget-0").css("margin", "auto");
+            $("#twitter-widget-0").css("width", "100%");
+
+        }
+    </script>
 
     <h2 class="title">Trudy Painter</h2>
 
@@ -23,15 +33,15 @@
         <div class="leftcolumn">
             <div class="homeColumn">
                 <div class="card">
-                    <p>hey 👋 i'm Trudy. i'm a 2nd year undergrad computer science and (94% sure) comparative media studies student at MIT.</p>
+                    <p>Hey!👋 I'm Trudy. I'm a 2nd year undergrad computer science and (94% sure) comparative media studies student at MIT.</p>
 
-                    <p>i'm interested in creative coding, data analysis, building systems, and how people express themselves.</p>
+                    <p>I'm interested in creative coding, data analysis, building systems, and how people express themselves.</p>
 
-                    <p>you can contact me at <a href="mailto:tpainter@mit.edu" target="_top" title="tianadueck@gmail.com">tpainter@mit.edu</a>.</p>
+                    <p>You can contact me at <a href="mailto:tpainter@mit.edu" target="_top" title="tianadueck@gmail.com">tpainter@mit.edu</a>.</p>
 
                     <!-- <p>We count the hours in a day. We point to their increase. Earlier, we saw only half the day, now we have noticed the movement within the whole of the day. But when the next day comes, we begin counting the hours anew.</p> -->
 
-                    <p>or find me one of these places...</p>
+                    <p>Or find me one of these places...</p>
 
                     <div class="graph">
                         <iframe src="graph.html" scrolling="no" margin-left="-100px"></iframe>
@@ -40,9 +50,57 @@
 
             </div>
         </div>
-        <div class="middlecolumn" style="align-content: center;">
-            <img id="me" src="me.png" alt="" style="width: 400px; height: 400px;" />
+        <div class="middlecolumn">
+            <img id="me" src="me.png" style="width: 400px; height: 400px;" />
         </div>
+
+    </div>
+
+    <div class="row">
+        <h2 class="title" style="padding-top: 40px;">Projects</h2>
+        <div class="blocks">
+            <div class="block">
+                <h2>REAL TALK RADIO</h2>
+                <p>
+                    This was a summer UROP with Poetic Justice Group at the MIT Media Lab. I created database of over 500 song clips of spoken intros, outros, interludes, and skits in Black music. Then, I made a generative broadcasting system to stream and crossfade the
+                    clips.
+                </p>
+                <p>
+                    Work available upon request.
+                </p>
+            </div>
+            <div class="block">
+                <h2>MEMOIR TITLE TWITTER BOT</h2>
+                <p>
+                    Practice in computational poetry! My friend Natalie kept making up funny memoir titles, so I tried to copy her speech patterns with a Twitter bot.
+                    <br>
+                    <a class="twitter-timeline tw-align-center" data-chrome="nofooter" data-width="500" data-height="300" data-dnt="true" href="https://twitter.com/memoirmaker?ref_src=twsrc%5Etfw">Tweets by memoirmaker</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </p>
+                <p>
+                    Check out <a target="blank" href="https://github.com/trudypainter/memoir-title-generator/blob/master/natalie-computational-poem.ipynb">the source code</a>.
+                </p>
+            </div>
+            <div class="block">
+                <h2>POKEMON ARCHIVE</h2>
+                <p>
+                    I love Pokemon cards, but I didn't know of anywhere to easily see them all. So, I used a Python web scraper and uploaded 10,000 of them to a channel in Are.na.
+                </p>
+                <img src="pokemon.png">
+                <p>
+                    Check out <a target="blank" href="https://github.com/trudypainter/pokemon-archive">the source code</a> or
+                    <a target="blank" href="https://www.are.na/trudy-painter/every-pokemon-card-uz5ifttjceo">the Are.na channel</a>.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="footer">
+            website made with html, css, javascript, and love
+            <br> -Trudy
+        </div>
+
     </div>
 
 </body>

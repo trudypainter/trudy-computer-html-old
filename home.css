@@ -95,7 +95,8 @@ a:hover {
 }
 
 
-/* iframe graph */
+/* iframe graph and twitter feed
+*/
 
 .graph {
     width: 95%;
@@ -113,53 +114,39 @@ iframe {
     overflow: hidden;
 }
 
-.over {
-    background-color: #ddd;
-    height: 600px;
-    min-height: 400px;
-    max-width: 450px;
-    overflow: auto;
-    line-height: 1.2;
+#timeline-widget-0 {
+    margin: auto;
+    width: 100%;
 }
 
-.over a {
-    color: #000000;
+.twitter-tweet {
+    margin: auto;
 }
 
-.over a:hover {
-    color: #000000;
-    cursor: pointer;
-}
 
-.over h2 {
-    display: block;
-    font-size: 12px;
-    font-weight: bolder;
-    background-color: #F7F7F7;
-    padding-left: 10px;
-}
-
-li {
-    border: 1px solid #E6E6E6;
-    margin-top: -1px;
-    /* Prevent double borders */
-    background-color: #fff;
-    padding-top: -300px;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 12px;
-    display: block;
-    position: relative;
-}
+/* blocks */
 
 .row {
     padding-left: 30px;
+    padding-right: 30px;
     font-size: 20px;
     text-align: left;
 }
 
+.block {
+    border: black dotted;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
 
-/* Create two unequal columns that floats next to each other */
+
+/* Create columns that floats next to each other */
 
 
 /* Left column */
@@ -167,12 +154,6 @@ li {
 .leftcolumn {
     float: left;
     width: 50%;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    min-width: 740px;
 }
 
 
@@ -205,19 +186,26 @@ li {
 
 /* Clear floats after the columns */
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* Footer */
 
 .footer {
     padding: 30px;
     text-align: left;
+    font-size: 15px;
     margin-top: 20px;
 }
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other*/
 
-@media(max-width: 1000px) {
+@media(max-width: 1060px) {
     .leftcolumn,
     .middlecolumn,
     .rightcolumn {
