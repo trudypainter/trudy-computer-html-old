@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="setTimeout(fixtwitterembed(), 1000)">
+<body onload="setTimeout(fixtwitterembed(), 3000)">
 
     <script>
         function fixtwitterembed() {
@@ -27,13 +27,14 @@
         }
     </script>
 
-    <h2 class="title">Trudy Painter</h2>
+
 
     <div class="row">
+        <h2 class="title">Trudy Painter</h2>
         <div class="leftcolumn">
             <div class="homeColumn">
                 <div class="card">
-                    <p>Hey!👋 I'm Trudy. I'm a 2nd year undergrad computer science and (94% sure) comparative media studies student at MIT.</p>
+                    <p>Hey👋 I'm Trudy. I'm a 2nd year undergrad student at MIT studying computer science and comparative media studies.</p>
 
                     <p>I'm interested in creative coding, data analysis, building systems, and how people express themselves.</p>
 
@@ -51,10 +52,12 @@
             </div>
         </div>
         <div class="middlecolumn">
-            <img id="me" src="me.png" style="width: 400px; height: 400px;" />
+            <img id="me" class="block_image" src="me.png" style="width: 400px; height: 400px;" />
         </div>
 
     </div>
+
+
 
     <div class="row">
         <h2 class="title" style="padding-top: 40px;">Projects</h2>
@@ -65,8 +68,10 @@
                     This was a summer UROP with Poetic Justice Group at the MIT Media Lab. I created database of over 500 song clips of spoken intros, outros, interludes, and skits in Black music. Then, I made a generative broadcasting system to stream and crossfade the
                     clips.
                 </p>
+                <img class="block_image" src="google-workflow.svg">
                 <p>
-                    Work available upon request.
+                    Check out <a target="blank" href="https://www.notion.so/Google-Workflow-9534563ea49648aebf8fdd92a6589293">the project workflow</a> or <a target="blank" href="https://mitmedialab.github.io/Real-Talk-Radio">the desktop stream.</a>
+                    <br> Code available upon request.
                 </p>
             </div>
             <div class="block">
@@ -86,7 +91,7 @@
                 <p>
                     I love Pokemon cards, but I didn't know of anywhere to easily see them all. So, I used a Python web scraper and uploaded 10,000 of them to a channel in Are.na.
                 </p>
-                <img src="pokemon.png">
+                <img class="block_image" src="pokemon.png">
                 <p>
                     Check out <a target="blank" href="https://github.com/trudypainter/pokemon-archive">the source code</a> or
                     <a target="blank" href="https://www.are.na/trudy-painter/every-pokemon-card-uz5ifttjceo">the Are.na channel</a>.
