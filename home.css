@@ -243,7 +243,8 @@ iframe {
         padding-left: 20px;
     }
     .middlecolumn {
-        padding-left: 200px;
+        float: left;
+        padding-left: 0px;
         padding-top: 60px;
     }
 }
