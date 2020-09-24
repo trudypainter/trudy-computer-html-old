@@ -1,4 +1,4 @@
-var SourceUrl = "www.trudy.computer/curveship/story.html?";
+var SourceUrl = "?";
 
 var appendedUrl = ""
 var narratorUrl = "";
