@@ -12,7 +12,7 @@
 body {
     font-family: sans-serif;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: white;
     font-size: 20px;
     text-align: left;
     line-height: 30px;
@@ -51,7 +51,7 @@ a:link {
     color: #000000;
     font-size: 17px;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
