@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Editorial;
+    src: url("Editorial\ New\ -\ Free\ for\ Personal\ Use/EditorialNew-Regular.otf") format("opentype");
+}
 
-/* Add a gray background color with some padding */
+
+/* Add a white background color with some padding */
 
 body {
     font-family: sans-serif;
@@ -21,11 +26,13 @@ body {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 139px;
+    font-family: Editorial;
 }
 
 h2 {
     font-size: 20px;
+    font-weight: normal;
 }
 
 p {
@@ -88,7 +95,7 @@ a:hover {
 .title {
     padding-left: 0px;
     padding-bottom: 0px;
-    font-size: 20px;
+    font-size: 28px;
     margin-left: 35px;
 }
 
