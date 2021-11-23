@@ -1,20 +1,39 @@
 /*******************
 WORK LIST
 ********************/
-.work-container{
-    min-height: 150px;
+#work {
     display: flex;
-    padding: 0px;
-    text-decoration: none;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+
+    width: 1000px;
+    margin: auto;
+    
+    margin-bottom: 40px;
 }
 
-ul{
-    padding: 0px;
+.work-container{
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+
+    filter: drop-shadow(0px 0px  0px white);
 }
+
+
 .work-thumbnail{
-    max-height: 150px;
-    max-width: 150px;
+    width: 250px;
+    height: 250px;
+    width: 200px;
     overflow: hidden;
+
+    display: none;
 }
 
 .work-img{
@@ -31,6 +50,12 @@ ul{
 .work-title{
     font-weight: bold;
 }
+
+.work-location{
+    font-style: italic;
+    color: gray;
+}
+
 .work-title:hover{
     text-decoration: underline;
 }
@@ -85,11 +110,11 @@ INDIVIDUAL PROJECT PAGES
 HOME PAGE / GENERAL
 ********************/
 .socials-container{
-    width: 600px;
+    width: 480px;
     height: 400px;
 }
 .socials-graph{
-    width: 600px;
+    width: 480px;
     height: 440px;
     overflow: hidden;
     border: none;
@@ -106,15 +131,46 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height:150%;
-    margin:0
+    margin:0;
 }
         
 #images{
     background-color:black;
     box-sizing:border-box;
 }
-#moreimages {
-    padding:50px;
+
+h2 {
+    font-size: 80px;
+    line-height: 80px;
+    padding-top: 0px;
+    margin-top: 40px;
+}
+
+#header-flex {
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+    opacity: 1;
+
+    width: 840px;
+    margin: auto;
+}
+
+#header-container{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: white;
+
+    filter: drop-shadow(0px 0px  10px white);
+}
+
+#intro{
+    width: 800px;
+    margin: auto;
 }
 
 span{
@@ -139,41 +195,30 @@ span{
 #text {
     padding:40px;
     box-sizing:border-box;
+    margin: auto;
 }
 
 #container {
-    position:relative; align-items:stretch;
-    height:100%;
-    display: -ms-flex;
-    display: -webkit-flex;
+    position:relative; 
+    align-items:stretch;
+    width:100%;
     display: flex;
+    flex-flow: row wrap;
+
+    background: linear-gradient(217deg, rgba(155, 155, 190, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(70, 81, 104, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(64, 105, 68, 0.8), rgba(0,0,255,0) 70.71%);
 }
 
-#container > div {
-    width: 50%;
+#footer {
+    width: 100%;
+    color: white;
 }
-
-@media (max-width: 1000px) {	
-    #moreimages {
-        display:none;
-    }	
-    #container {
-        display:block;
-    }
-    #container > div {
-        width: 100%;
-    }
-    #photo{
-        width:100%;
-        height:600px;
-    }
-    #text {
-        width:100%;
-    }
-}
-
-@media (max-width: 600px) {
-    #images, #photo{
-        height:400px;
-    }		
+#footer-text{
+    margin: auto;
+    color: white;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
