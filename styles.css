@@ -7,20 +7,21 @@ WORK LIST
     gap: 20px;
     justify-content: center;
 
-    width: 1000px;
+    width: 1100px;
     margin: auto;
     
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .work-container{
-    width: 200px;
-    display: flex;
-    padding: 10px;
+    width: 300px;
+    height: max-content;
+    padding: 16px;
+    padding-bottom: 50px;
     text-decoration: none;
 
     background-color: white;
-    border-style: none;
+    border: 2px solid black;
     border-radius: 10px;
 
     filter: drop-shadow(0px 0px  0px white);
@@ -30,17 +31,49 @@ WORK LIST
 .work-thumbnail{
     width: 250px;
     height: 250px;
-    width: 200px;
-    overflow: hidden;
+    margin: auto;
 
-    display: none;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    margin: 20px;
 }
 
 .work-img{
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
+    width: 100%;
+    height: 100%;    
+    border-radius: 10px;
 }
+
+.work-tags {
+    display: flex;
+}
+
+.tag-badge {
+    font-style: normal;
+    color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border: 2px solid black;
+    border-radius: 99999px;
+
+    margin-right: 10px;
+}
+
+#School {background-color: #FF85BF;}
+#Fullstack {background-color: #ce85ff;}
+#Research {background-color: #fffd85;}
+#Archive {background-color: #85e3ff;}
+#Personal {background-color: #ffac85;}
+#Misc {background-color: #99ff85;}
+#Arduino {background-color: #8591ff;}
+#Machine-Learning {background-color: #85beff;}
+#React {background-color: #ff85e5;}
+#Startup {background-color: #ff858b;}
+
+
+
 
 .work-info{
     position: relative;
@@ -48,7 +81,9 @@ WORK LIST
     max-height: 300px;
 }
 .work-title{
+    position: relative;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .work-location{
@@ -99,7 +134,7 @@ INDIVIDUAL PROJECT PAGES
     margin-right: 30px;
 }
 .project-title{
-    font-weight: bold;
+    stroke: 1.6px;
     padding-bottom: 20px;
 }
 .project-img{
@@ -129,9 +164,13 @@ a {
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height:150%;
     margin:0;
+
+    background: linear-gradient(180deg, #92B0FF 0%, #7593FF 40.63%, #B9DDFF 79.69%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
         
 #images{
@@ -140,10 +179,10 @@ body{
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 72px;
     line-height: 80px;
-    padding-top: 0px;
-    margin-top: 40px;
+    padding: 0px;
+    margin: auto;
 }
 
 #header-flex {
@@ -161,16 +200,27 @@ h2 {
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 40px;
-    border-style: none;
+    border: 2px solid #000000;
     border-radius: 10px;
     background-color: white;
+}
 
-    filter: drop-shadow(0px 0px  10px white);
+#header-me {
+    width: 300px;
+    padding-top: 34px;
+}
+
+#me-img {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 40px 150px;
 }
 
 #intro{
     width: 800px;
     margin: auto;
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 span{
@@ -205,9 +255,7 @@ span{
     display: flex;
     flex-flow: row wrap;
 
-    background: linear-gradient(217deg, rgba(155, 155, 190, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(70, 81, 104, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(64, 105, 68, 0.8), rgba(0,0,255,0) 70.71%);
+    height: 100%;
 }
 
 #footer {
